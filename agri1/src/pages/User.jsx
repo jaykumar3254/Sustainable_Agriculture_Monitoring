@@ -23,19 +23,22 @@ const User = () => {
           </p>
         </div>
       </div>
-
+{/*
       <div className="mb-10">
         <h3 className="text-2xl text-green-400 mb-2">Daily Updates</h3>
-        <div className="w-full h-60 bg-green-900 rounded-lg border border-green-500 text-center flex items-center justify-center text-gray-400">
+        <div className="w-full h-100 bg-green-900 rounded-lg border border-green-500 text-left flex items-left justify-left text-gray-400">
+          <div className="calendar-section">
+            <CalendarComponent />
+          </div>
         </div>
-      </div>
+      </div>*/}
 
       <div className="mb-10">
         <h3 className="text-2xl text-green-400">History</h3>
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-        {[1, 2, 3].map((item) => (
+        {[1, 2, 3, 4, 5, 6].map((item) => (
           <div key={item} className="bg-green-900 border border-green-500 p-5 rounded-lg text-gray-300 flex flex-col">
             <p className="text-sm text-green-400 mb-1">Date: 2025-04-20</p>
             <p className="font-semibold mb-2">Prompt: Analyze soil moisture for tomato plant</p>
@@ -48,6 +51,15 @@ const User = () => {
             >
               View PDF Report
             </a>
+            {/*<a
+              href="./progress.jsx" 
+              className="mt-2 bg-green-700 hover:bg-green-600 text-white text-sm px-4 py-2 rounded text-center"
+            >
+              View Progress
+            </a>*/}
+            <p className="text-green-700 mt-4 text-sm text-center">
+              <a href="/progress" className="mt-2 bg-green-700 hover:bg-green-600 text-white text-sm px-4 py-2 rounded text-center">View Progress</a>
+            </p>
           </div>
         ))}
       </div>

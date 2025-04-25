@@ -3,8 +3,10 @@ import About from './pages/About';
 import User from './pages/User';
 import History from './pages/History';
 import Home from './pages/Home'; 
-import Login from './pages/login';
+import Login from './pages/Login';
 import Signup from './pages/Signup';
+import Progress from './pages/progress';
+import ProgressForm from './pages/ProgressForm';
 
 
 export default function App() {
@@ -32,6 +34,8 @@ export default function App() {
         <Route path="/user" element={<User />} />
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<Signup />} />
+        <Route path="/progressform" element={<ProgressForm />} />
+        <Route path="/progress" element={<Progress />} />
       </Routes>
     </div>
   );
