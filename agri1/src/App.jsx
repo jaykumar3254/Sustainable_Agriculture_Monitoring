@@ -1,7 +1,7 @@
 import { Routes, Route, Link, Router } from 'react-router-dom';
 import About from './pages/About';
 import User from './pages/User';
-import History from './pages/History';
+import Loader from './pages/Loader';
 import Home from './pages/Home'; 
 import Login from './pages/Login';
 import Signup from './pages/Signup';
